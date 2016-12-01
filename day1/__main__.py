@@ -1,5 +1,4 @@
 import os
-import ast
 
 # read in the data
 dir_path = os.path.dirname(os.path.realpath(__file__))
