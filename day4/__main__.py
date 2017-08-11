@@ -5,7 +5,6 @@ import string
 
 #solution only works in python 2 will fix
 
-
 # read in the data
 dir_path = os.path.dirname(os.path.realpath(__file__))
 filename = dir_path + "/data_day4.txt"
@@ -78,16 +77,13 @@ for row in file:
     if value > 0:
         correct_rooms.append(list_of_elements)
 
+# answer part 1
+print(sum_of_the_sector)
 
 for element in correct_rooms:
     if "north" in room_decoder.decode_message(element)[0]:
         print(room_decoder.decode_message(element)[0])
         answer_part_two = room_decoder.decode_message(element)[1]
-
-
-
-# answer part 1
-print(sum_of_the_sector)
 
 # answer part 2
 print(answer_part_two)
